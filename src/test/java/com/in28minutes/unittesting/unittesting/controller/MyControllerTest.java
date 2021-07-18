@@ -17,7 +17,7 @@ public class MyControllerTest {
     @Test
     public void testMyController() throws Exception {
         RequestBuilder request = MockMvcRequestBuilders
-                .get("/test")
+                .get("/helloworld")
                 .accept(MediaType.APPLICATION_JSON);
         // andExpect can be chained
         MvcResult result = mockMvc.perform(request).andExpect(MockMvcResultMatchers.status().is2xxSuccessful()).andReturn();
